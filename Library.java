@@ -66,10 +66,10 @@ class Faculty extends Person {
 }
 // Part D: Method Overloading
 class Area {
-    void areacircle(double radius) {
+    void area(double radius) {  // circle area
         System.out.println("Circle Area = " + (3.14 * radius * radius));
     }
-    void arearectangle(int length, int breadth) {
+    void area(int length, int breadth) {       // rectangular area
         System.out.println("Rectangle Area = " + (length * breadth));
     }
 }
@@ -136,8 +136,8 @@ public class Library {
         f.display();
         System.out.println("\n METHOD OVERLOADING");
         Area a = new Area();
-        a.areacircle(5.0);       
-        a.arearectangle(10, 20);    
+        a.area(5.0);       
+        a.area(10, 20);    
         System.out.println("\n METHOD OVERRIDING");
         Vehicle v1 = new Car();
         Vehicle v2 = new Bike();
