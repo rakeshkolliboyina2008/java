@@ -16,10 +16,14 @@ class C1{
 	 void demo() {
 		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
 	 }
+	  void addition (){
+		 System.out.println("addition :" +(x+y+z));
+     }
  }
 public class Multilevel {
 public static void main(String[] args) {
 	C3 T=new C3();
 	T.demo();
+	T.addition();
 }
 }
