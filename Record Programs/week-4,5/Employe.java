@@ -12,10 +12,10 @@ class worker{
 		this.salary = 0.0;
 		this.promotionStatus = false;
 	}
-	 worker(String name, int id) {
+	 worker(String name, int id, String designation) {
 		this.name = name;
 		this.id = id;
-		this.designation = "Not Assigned";
+		this.designation = designation;
 		this.salary = 0.0;
 		this.promotionStatus = false;
 		}
@@ -46,7 +46,7 @@ class worker{
 public class Employe {
  public static void main(String[] args) {
 	 worker w1 = new worker();
-	 worker w2 = new worker("Rahul", 101);
+	 worker w2 = new worker("Rahul", 101, "Software Engineer");
 	 worker w3 = new worker("Priya", 102, "Software Engineer", 50000);
 	 worker w4 = new worker("Arun", 103, "Manager", 80000, true);
      w1.display();
