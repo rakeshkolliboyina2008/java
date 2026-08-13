@@ -1,7 +1,7 @@
 package Excersice;
 class Order{
-	public String date;
-	public String number;
+	private String date;
+	private String number;
 	public Order(String date,String number) {
 		this.date=date;
 		this.number=number;
