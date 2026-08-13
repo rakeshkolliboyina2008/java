@@ -1,9 +1,8 @@
 package Excersice;
-import java.util.Date;
 class Order{
-	public Date date;
+	public String date;
 	public String number;
-	public Order(Date date,String number) {
+	public Order(String date,String number) {
 		this.date=date;
 		this.number=number;
 	}
@@ -13,10 +12,10 @@ class Order{
     public void close() {
     	System.out.println("order"+number+"closed");
     }
-	public Date getDate () {
+	public String getDate () {
 		return date;
 	}
-    public void setDate (Date date) {
+    public void setDate (String date) {
     	this.date=date;
     }
     public String getNumber() {
@@ -27,7 +26,7 @@ class Order{
     }
 }
 class SpecialOrder extends Order{
-	SpecialOrder(Date date,String number){
+	SpecialOrder(String date,String number){
 		super(date,number);
 	}
 	public void dispatch() {
@@ -35,7 +34,7 @@ class SpecialOrder extends Order{
 		}
 }
 class NormalOrder extends Order{
-	NormalOrder(Date date,String number){
+	NormalOrder(String date,String number){
 		super(date,number);
 	}
 	public void dispatch() {
@@ -74,13 +73,13 @@ class customer{
 public class MainOrder {
 public static void main(String[] args) {
 	customer c = new customer("joe","anits");
-	 SpecialOrder s = new  SpecialOrder(new Date(),"sp-1");
+	 SpecialOrder s = new  SpecialOrder("13 augest","sp-1");
 	 c.sendOrder(s);
 	 s.confirm();
 	 s.dispatch();
 	 c.receiveOrder(s);
 	 s.close();
-	 NormalOrder n = new NormalOrder(new Date(),"no-1");
+	 NormalOrder n = new NormalOrder("16 augest","no-1");
 	 n.confirm();
 	 n.dispatch();
 	 c.receiveOrder(n);
