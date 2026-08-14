@@ -11,15 +11,15 @@ class Cls1{
 		 System.out.println("see :"+super.x+ " "+this.y);
 	 }
  }
-// class Cls3 extends Cls2{
-//	 int z=12;
-//	 void demo() {
-//		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
-//	 }
-// }
- class Cls3 extends Cls1{
+class Cls3 extends Cls2{
 	 int z=12;
 	 void demo() {
+		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
+	 }
+}
+ class Cls4 extends Cls1{
+	 int z=12;
+	 void demos() {
 		 System.out.println("see :"+super.x+ " "+this.z);
 	 }
  }
@@ -27,5 +27,7 @@ public class Hybrid {
 public static void main(String[] args) {
 	Cls3 c = new Cls3();
 	c.demo();
+	Cls4 s = new Cls3();
+	s.demos;
 }
 }
