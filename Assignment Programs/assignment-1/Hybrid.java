@@ -27,7 +27,7 @@ public class Hybrid {
 public static void main(String[] args) {
 	Cls3 c = new Cls3();
 	c.demo();
-	Cls4 s = new Cls3();
+	Cls4 s = new Cls4();
 	s.demos;
 }
 }
