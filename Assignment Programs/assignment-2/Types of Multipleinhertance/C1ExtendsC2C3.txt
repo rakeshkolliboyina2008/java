@@ -1,3 +1,4 @@
+package interfaces;
 class C2{
     void show2(){
         System.out.println("C2 method");
