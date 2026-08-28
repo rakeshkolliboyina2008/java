@@ -1,3 +1,4 @@
+package interfaces;
 interface I1{
     void show1();
 }
