@@ -1,3 +1,4 @@
+package interfaces;
 // Parent class
 class Animal
 {
