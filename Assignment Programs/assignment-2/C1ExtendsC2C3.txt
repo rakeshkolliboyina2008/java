@@ -1,0 +1,15 @@
+class C2{
+    void show2(){
+        System.out.println("C2 method");
+    }
+}
+class C3{
+    void show3(){
+        System.out.println("C3 method");
+    }
+}
+// ERROR: Java does not allow extending two classes
+class C1 extends C2, C3{
+void show1(){
+System.out.println(“C1”);
+}
