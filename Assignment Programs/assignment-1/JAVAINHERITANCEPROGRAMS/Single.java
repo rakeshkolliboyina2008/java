@@ -5,6 +5,7 @@ class Ones{
 		 System.out.println("this is one");	
 	 }
 }
+//single inheritance
 class Twos extends Ones {
 	 int y= 34;
 	 void see () {
