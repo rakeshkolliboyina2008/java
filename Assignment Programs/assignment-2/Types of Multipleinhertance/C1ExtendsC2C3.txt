@@ -1,9 +1,11 @@
 package interfaces;
+//parent class
 class C2{
     void show2(){
         System.out.println("C2 method");
     }
 }
+//sub class
 class C3{
     void show3(){
         System.out.println("C3 method");
