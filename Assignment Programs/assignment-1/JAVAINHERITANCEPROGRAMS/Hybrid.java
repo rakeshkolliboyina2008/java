@@ -11,12 +11,14 @@ class Cls1{
 		 System.out.println("see :"+super.x+ " "+this.y);
 	 }
  }
+//multilevel inheritance
 class Cls3 extends Cls2{
 	 int z=12;
 	 void demo() {
 		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
 	 }
 }
+//hierarchical inheritance
  class Cls4 extends Cls1{
 	 int z=12;
 	 void demos() {
