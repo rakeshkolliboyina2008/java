@@ -1,10 +1,13 @@
 package interfaces;
+//first interface
 interface I1{
 	void ex();
 }
+//second interface
 interface I2{
 	 void in();
 }
+//third interface extends 1&2 interface
 interface I3 extends I1, I2{
 	void lee();
 }
